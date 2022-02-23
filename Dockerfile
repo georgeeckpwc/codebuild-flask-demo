@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.9-slim-bullseye
 #FROM debian:buster
 #CMD apt-get update -y && apt-get install python3 && apt-get install python3-venv
 # Set application working directory
