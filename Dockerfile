@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM python:3.9-alpine
 # Set application working directory
 WORKDIR /usr/src/app
 # Install requirements
