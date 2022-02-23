@@ -1,4 +1,4 @@
-FROM python:3.10-alpine
+FROM python:3.8.3-slim
 # Set application working directory
 WORKDIR /usr/src/app
 # Install requirements
