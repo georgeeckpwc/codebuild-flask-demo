@@ -1,4 +1,6 @@
 FROM python:3.9-slim
+#FROM debian:buster
+#CMD apt-get update -y && apt-get install python3 && apt-get install python3-venv
 # Set application working directory
 WORKDIR /usr/src/app
 # Install requirements
