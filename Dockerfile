@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.8-slim-buster
 # Set application working directory
 WORKDIR /usr/src/app
 # Install requirements
@@ -7,4 +7,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 # Install application
 COPY app.py ./
 # Run application
-CMD python app.py
+CMD python3 app.py
