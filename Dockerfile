@@ -1,7 +1,9 @@
-FROM python:3.9-slim-bullseye
+#FROM python:3.9-slim-bullseye
+FROM ubuntu:latest
 # Update Image
 RUN apt-get update
 RUN apt-get upgrade -y --no-install-recommends
+RUN apt-get install --yes python3 pip3
 # Set application working directory
 WORKDIR /usr/src/app
 # Install requirements
