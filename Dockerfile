@@ -1,7 +1,7 @@
 FROM python:3.9-slim-bullseye
 # Update Image
-RUN apt update
-RUN apt upgrade -y
+RUN apt-get update
+RUN apt-get upgrade -y --no-install-recommends
 # Set application working directory
 WORKDIR /usr/src/app
 # Install requirements
