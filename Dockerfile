@@ -3,7 +3,7 @@ FROM ubuntu:latest
 # Update Image
 RUN apt-get update
 RUN apt-get upgrade -y --no-install-recommends
-RUN apt-get install --yes python3 pip3
+RUN apt-get install --yes python3 python3-pip
 # Set application working directory
 WORKDIR /usr/src/app
 # Install requirements
