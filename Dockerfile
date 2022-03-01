@@ -1,6 +1,7 @@
 FROM python:3.9-slim-bullseye
-#FROM debian:buster
-#CMD apt-get update -y && apt-get install python3 && apt-get install python3-venv
+# Update Image
+RUN apt update
+RUN apt upgrade -y
 # Set application working directory
 WORKDIR /usr/src/app
 # Install requirements
